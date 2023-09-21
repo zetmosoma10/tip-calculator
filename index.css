@@ -46,6 +46,7 @@ body {
   background-color: var(--Strong-cyan);
   border-radius: 5px;
   color: var(--Very-dark-cyan);
+  cursor: pointer;
   border: 0;
   font-family: inherit;
   font-weight: 700;
@@ -104,4 +105,69 @@ input:focus {
   margin: 0;
   padding: 0;
   font-size: 1.6rem;
+}
+
+.tip-input::placeholder {
+  opacity: 0.6;
+}
+
+/* payment */
+
+.payment {
+  background-color: var(--Very-dark-cyan);
+  border-radius: 15px;
+  padding: 2.8rem 2rem 2rem;
+}
+
+.tip-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.tip-person {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--White);
+}
+
+.person {
+  font-size: 1.3rem;
+  margin: 0;
+  color: var(--Dark-grayish-cyan);
+}
+
+.tip-amount_person {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.67px;
+  color: var(--Strong-cyan);
+}
+
+@media screen and (min-width: 768px) {
+  .payment {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    height: 60rem;
+  }
+
+  .total-wrapper {
+    flex: 1;
+  }
+
+  .btn-reset {
+    align-self: flex-end;
+  }
+
+  .tip-amount {
+    margin-bottom: 2.5rem;
+  }
+
+  .tip-amount_person {
+    font-size: 48px;
+    letter-spacing: -1px;
+  }
 }
